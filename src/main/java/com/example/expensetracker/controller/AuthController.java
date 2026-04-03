@@ -16,7 +16,10 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://ai-expense-tracker-a3hl.vercel.app"
+})
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
