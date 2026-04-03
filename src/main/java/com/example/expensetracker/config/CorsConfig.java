@@ -20,7 +20,9 @@ public class CorsConfig {
                                 "https://ai-expense-tracker-a3hl.vercel.app"
                         )
                         .allowedMethods("*")
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
+
             }
         };
     }
